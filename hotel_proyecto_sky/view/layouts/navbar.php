@@ -8,6 +8,10 @@
         <p>Hotel villa</p>
     </div>
     <div class="nav-bar-lado_isquierdo">
-
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Acerca de Villa</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
     </div>
 </nav>

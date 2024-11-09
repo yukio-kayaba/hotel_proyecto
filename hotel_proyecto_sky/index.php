@@ -1,4 +1,5 @@
 <?php
+	require_once("config.php");
 	require_once("controller/controlador.php");
 	if(isset($_GET['vista'])){
 		if(method_exists("ModeloControlador",$_GET['vista'])){
