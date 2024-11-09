@@ -1,0 +1,15 @@
+.nav-bar-image{
+    width: 30px;       /* Ancho del icono */
+    height: 25px;      /* Alto total del icono */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .nav-bar-image span {
+    display: block;
+    height: 4px;       /* Grosor de cada línea */
+    background-color: #333;
+    border-radius: 4px; /* Bordes redondeados */
+  }
