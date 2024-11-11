@@ -7,6 +7,12 @@
 </head>
 <body>
     <?php include("layouts/navbar.php"); ?>
-    <?php include("layouts/page_date.php"); ?>
+    <?php include("layouts/aside.php"); ?>
+    <header>
+        <?php include("layouts/page_date.php"); ?>
+    </header>
+
+    <?php include("layouts/abajo_control.php"); ?>
 </body>
+
 <?php include("layouts/footer.php"); ?>
