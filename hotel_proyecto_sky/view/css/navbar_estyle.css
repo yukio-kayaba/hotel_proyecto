@@ -79,7 +79,11 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
   transform: scale(1.1);
   text-shadow: 10px 2px 4px rgba(240, 141, 48, 0.836);
 }
-
+.nav-bar-enlaces{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 @media (max-width: 768px) {
   nav .nav-bar-lado_isquierdo{
@@ -87,7 +91,7 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
       display: none;
   }
   nav .navbar-lado_derecho{
-      width: 55%;
+      width: 50%;
       justify-content: space-between;
   }
 }

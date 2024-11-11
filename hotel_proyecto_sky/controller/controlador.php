@@ -7,6 +7,8 @@
 		static function inicio(){
 			require_once("./view/inicio.php");
 		}
-		
+		static function principal_css(){
+			require_once("./view/css/principal.css");
+		}
 	}
 ?>
