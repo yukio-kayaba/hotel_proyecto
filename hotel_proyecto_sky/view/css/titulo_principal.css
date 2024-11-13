@@ -6,22 +6,29 @@
 
 .titulo_principal img{
     width: 40%;
-    animation: wave 1.5s infinite;
+    /* animation: wave 1.5s infinite; */
     transition: all 0.3s ease;
 }
 
 .titulo_principal h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: darkgoldenrod;
-    font-size: 40px;
-    text-shadow: 2px 2px 8px rgb(255, 230, 7); 
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-shadow: 2px 2px 8px rgb(255 170 0 / 73%); 
+    font-weight: bolder;
 }
 
 .titulo_principal h2 span{
     display: inline-block;
-    animation: wave 1.5s infinite;
-    transition: all 0.3s ease;
+    animation: wave 2s infinite;
+    transition: all 0.5s ease;
     animation-delay: calc(0.1s * var(--i)); 
+}
+
+.titulo_principal p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @keyframes wave {

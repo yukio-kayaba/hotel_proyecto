@@ -19,7 +19,7 @@ body{
     height: 100vh;
     color: white;
     font-size: 2em;
-    background: linear-gradient(to top,  #f8f8f857 40% , #ebe8df71  60% );;
+    background: linear-gradient(to top,  #36313185 40% , #66645cb2  60% );;
 }
 .parallax {
     background-attachment: fixed;
