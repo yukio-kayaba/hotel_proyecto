@@ -1,3 +1,5 @@
 <?php
-    define("url","http://localhost/git_hub_coy/hotel_proyecto/hotel_proyecto_sky/");
+    $baseUrl = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
+    $rutaCompleta = $baseUrl;
+    define("url",$rutaCompleta);
 ?>

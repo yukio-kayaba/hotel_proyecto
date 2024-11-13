@@ -43,6 +43,7 @@ nav .nav-bar-lado_isquierdo{
 nav .nav-bar-lado_isquierdo > ul{
   display: flex;
   width: 90%;
+  align-items: center;
   height: 100%;
   flex-direction: row;
   justify-content: space-between;

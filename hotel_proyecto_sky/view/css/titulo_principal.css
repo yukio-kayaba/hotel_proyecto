@@ -1,0 +1,36 @@
+.titulo_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_principal img{
+    width: 40%;
+    animation: wave 1.5s infinite;
+    transition: all 0.3s ease;
+}
+
+.titulo_principal h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgoldenrod;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgb(255, 230, 7); 
+}
+
+.titulo_principal h2 span{
+    display: inline-block;
+    animation: wave 1.5s infinite;
+    transition: all 0.3s ease;
+    animation-delay: calc(0.1s * var(--i)); 
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0px);
+        transition: all 0.3s ease;
+    }
+    75% {
+        transform: translateY(-10px) scale(1.1);
+        transition: all 0.3s ease;
+    }
+}
