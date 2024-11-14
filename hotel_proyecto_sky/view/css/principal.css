@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+:root{
+    --bg-fondo:brown ;
+}
+
 body{
     font-family: 'Times New Roman', Times, serif;
     background-image: url("../images/fondo_principal.jpg");
