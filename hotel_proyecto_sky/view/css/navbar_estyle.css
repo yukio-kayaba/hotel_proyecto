@@ -10,7 +10,7 @@ nav{
   align-items: center;
   /* /* background: linear-gradient(to right, red 45%, rgba(255, 0, 0, 0.5) 50%, blue 55%); */
   /* background: linear-gradient(to right,  rgba(140, 162, 233, 0.829) 40% ,  rgba(49, 17, 173, 0.664) 60% ); */
-  background: linear-gradient(to right,  #d4af37d0 40% , #b79527d2  60% );
+  background: linear-gradient(to right,  #0014468a, 40% , #0014468a  60% );
   filter: blur(0.2px);
   font-family: fangsong;
   z-index: 1000;

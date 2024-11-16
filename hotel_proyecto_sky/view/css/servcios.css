@@ -1,0 +1,57 @@
+/* Fuente general para la sección */
+.servicios {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #001446; /* Fondo gris claro */
+}
+
+.titulo-servicios h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffffff; /* Color del texto del título */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col {
+    flex: 1 1 200px;
+    max-width: 220px;
+    margin: 10px;
+}
+
+.icon-box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box h5 {
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box:hover img {
+    transform: scale(1.1);
+}
