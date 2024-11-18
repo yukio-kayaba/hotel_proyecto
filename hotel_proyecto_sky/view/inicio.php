@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/navbar_estyle.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/titulo_principal.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/servcios.css">
+    <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
 </head>
 <body>
     <?php include("layouts/navbar.php"); ?>

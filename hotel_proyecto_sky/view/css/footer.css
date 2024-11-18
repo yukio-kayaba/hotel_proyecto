@@ -1,0 +1,151 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.pageFooter {
+    background-color: #00246d75;
+    color: #FFFFFF;
+    padding: 40px 20px;
+}
+
+.footerWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footerLogo {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+
+.footerLogo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;             /* Flexbox dentro de las columnas */
+    flex: auto;                     
+}
+.container1{
+display: flex;
+flex: 2;
+
+}
+
+.footerColumn {
+    flex: 1;
+    min-width: 180px;
+    padding: 2 px;
+    text-align: left;
+}
+
+.footerColumn h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.footerColumn ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerColumn ul li {
+    margin-bottom: 10px;
+}
+
+.footerColumn ul li a {
+    color: #FFFFFF;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+    position: relative;
+}
+
+/* Efecto de subrayado al pasar el cursor */
+.footerColumn ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Línea debajo del texto */
+    left: 0;
+    width: 0%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #ffffff; /* Color dorado */
+    transition: width 0.3s ease; /* Transición suave al expandir */
+}
+
+.footerColumn ul li a:hover::after {
+    width: 100%; /* Expande la línea al 100% al pasar el cursor */
+}
+
+
+
+.footerBottom {
+    justify-content: space-between;
+    border-top: 1px solid #ffffff;  
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia {
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Centra los íconos verticalmente */
+    gap: 10px; /* Espacio entre los íconos */
+}
+
+.socialMedia a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #FFD700; /* Cambia el color al pasar el mouse */
+}
+
+
+.socialMedia a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #FFD700; /* Cambia el color al pasar el mouse */
+}
+
+
+.copyright {
+    margin-left: auto; /* Empuja el texto a la derecha */
+    text-align: right;
+    font-size: 0.9em;
+}
