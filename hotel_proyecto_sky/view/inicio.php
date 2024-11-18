@@ -12,10 +12,11 @@
     <?php include("layouts/navbar.php"); ?>
     <?php include("layouts/aside.php"); ?>
     <?php include("layouts/titulo_principal.php"); ?>
-    <header>
+    <header class="">
         <?php include("layouts/page_date.php"); ?>
     </header>
-
+    <header>
+        </header>
     <?php include("layouts/abajo_control.php"); ?>
 </body>
 
