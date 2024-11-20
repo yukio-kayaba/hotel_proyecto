@@ -15,14 +15,35 @@
         <p>Su Comodidad al maximo</p>
     </div>
     <div class="elemento_separado">
-        <div>
-            <p>Iniciar Secion</p>
+        <div class="drop-activador">
+            <div class="drop-dow">
+                <p>Iniciar Secion</p>
+            </div>
+            <div class="drop-dow-menu1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure, placeat libero, impedit nam rem ducimus sequi natus dolore debitis quod ipsa delectus commodi enim obcaecati dolorem illo quibusdam suscipit.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>Reservar Fecha</p>
+        <div class="drop-activador">
+            <div class="drop-dow">
+                <p>Iniciar Secion</p>
+            </div>
+            <div class="drop-dow-menu1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure, placeat libero, impedit nam rem ducimus sequi natus dolore debitis quod ipsa delectus commodi enim obcaecati dolorem illo quibusdam suscipit.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>Ubicacion</p>
+        <div class="drop-activador">
+            <div class="drop-dow">
+                <p>Iniciar Secion</p>
+            </div>
+            <div class="drop-dow-menu1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure, placeat libero, impedit nam rem ducimus sequi natus dolore debitis quod ipsa delectus commodi enim obcaecati dolorem illo quibusdam suscipit.
+                </p>
+            </div>
         </div>
     </div>
 </section>
