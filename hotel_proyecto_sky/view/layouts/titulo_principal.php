@@ -35,13 +35,14 @@
                 </p>
             </div>
         </div>
-        <div class="drop-activador">
-            <div class="drop-dow">
-                <p>Iniciar Secion</p>
+        <div class="drop-activador ">
+            <div class="drop-dow ubication">
+                <p>Hubicacion</p>
             </div>
-            <div class="drop-dow-menu1">
+            <div class="drop-dow-menu1 ubication_date" style="left:50%;">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure, placeat libero, impedit nam rem ducimus sequi natus dolore debitis quod ipsa delectus commodi enim obcaecati dolorem illo quibusdam suscipit.
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15575.496065256566!2d-69.2027392!3d-12.59055375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1732137340302!5m2!1ses-419!2spe" width="440" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure, placeat libero, impedit nam rem ducimus sequi natus dolore debitis quod ipsa delectus commodi enim obcaecati dolorem illo quibusdam suscipit. -->
                 </p>
             </div>
         </div>

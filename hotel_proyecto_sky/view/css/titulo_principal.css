@@ -53,18 +53,13 @@
 }
 
 .section .elemento_separado .drop-activador{
-    /* background: #000; */
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 32%;
     color: #000;
     height: 100%;
-    /* padding: 10px; */
     display: grid;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    border: 1.5px dotted #474747;
+    border: 1.5px dotted #02119b;
     border-radius: 10px;
 }
 .section .elemento_separado .drop-activador .drop-dow{
@@ -86,6 +81,15 @@
 .drop-dow-menu1{
     position: absolute;
     bottom: 80px;
+    background: #1e247775;
+    width: 450px;
+    height: 250px;
+    border: 5px solid #02119b;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 @keyframes wave {
