@@ -29,7 +29,7 @@ body{
     height: 100vh;
     color: white;
     font-size: 2em;
-    background: linear-gradient(to top,  #36313185 40% , #66645cb2  60% );;
+    background: linear-gradient(to top, #88863d1f 40%, #a9a9a9b2 60%);
 }
 .parallax {
     background-attachment: fixed;
@@ -40,7 +40,7 @@ body{
 @keyframes ZoomIn{
     0%{
         /* transform: scale(1); */
-        background-size: 100%;
+        background-size: 105%;
     }
     100%{
         /* transform: scale(1.1); */

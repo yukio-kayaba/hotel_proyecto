@@ -6,7 +6,7 @@
 		if(method_exists("ModeloControlador",$url1[0])){
 			// ModeloControlador::{$url[0]}();
 			// print("variable "+$url[0]);
-			ModeloControlador::{$url1[0]}();
+			// ModeloControlador::{$url1[0]}();
 		} else {
 			ModeloControlador::error_pagina();
 		}

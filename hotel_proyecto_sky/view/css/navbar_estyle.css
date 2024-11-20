@@ -21,8 +21,8 @@ nav{
 }
 
 .nav-colores{
-  background: linear-gradient(to right,  rgba(47, 79, 184, 0.959) 20% ,  rgb(35, 12, 128) 80% );
-  transition: linear 0.7s ease;
+  background: linear-gradient(to right,  rgb(86 116 209 / 96%) 20% ,  rgb(30 23 115) 80% );
+  /* transition: background 0.7s ease; */
   color: (208,184,154,1) ;
 }
 .nav-bar-image{
@@ -41,7 +41,7 @@ nav{
 .color_text_alicebu{
   color: rgba(208,184,154,1);
   font-size: large;
-  text-shadow: -1px 1px 7px #fff;
+  /* text-shadow: -1px 1px 7px #fff; */
 }
 
 nav .navbar-lado_derecho{
@@ -171,5 +171,18 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+  }
+  .footerBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .titulo_principal h2{
+    font-size: 40px;
   }
 }
