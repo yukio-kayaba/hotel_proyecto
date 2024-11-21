@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/titulo_principal.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/servcios.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
+    <script src="<?php echo url;?>/view/js/inicio.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 </head>
 <body>
     <?php include("layouts/navbar.php"); ?>

@@ -44,7 +44,7 @@
     width: 65%;
     height: 70px;
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -64,6 +64,7 @@
 }
 .section .elemento_separado .drop-activador .drop-dow{
     transition: all 0.5s ease;
+    cursor: pointer;
     width: 100%;
     height: 100%;
     display: grid;
@@ -78,18 +79,38 @@
     color: #fff;
     background: #080131b6;
 }
+
 .drop-dow-menu1{
     position: absolute;
     bottom: 80px;
     background: #1e247775;
-    width: 450px;
-    height: 250px;
+    /* width: 450px; */
+    /* height: 400px; */
+    padding: 10px 0 10px 0;
     border: 5px solid #02119b;
     border-radius: 10px;
     display: none;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     
+}
+
+.drop-dow-menu1 h2{
+    width: 100%;
+    height: 20px;
+    align-content: center;
+    background: #dcdaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_update{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
 }
 
 @keyframes wave {
