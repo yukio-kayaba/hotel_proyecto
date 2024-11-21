@@ -71,7 +71,7 @@ nav .nav-bar-lado_isquierdo > ul{
   flex-direction: row;
   justify-content: space-around;
 }
-nav .nav-bar-lado_isquierdo ul > li{
+nav .nav-bar-lado_isquierdo ul > .li-datos{
   height: 90%;
   display: flex;
   transition: transform 0.3s ease;
@@ -79,7 +79,7 @@ nav .nav-bar-lado_isquierdo ul > li{
   flex-direction: row;
   justify-content: center;
 }
-nav .nav-bar-lado_isquierdo ul > li::after {
+nav .nav-bar-lado_isquierdo ul > .li-datos::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -89,21 +89,33 @@ nav .nav-bar-lado_isquierdo ul > li::after {
   background-color: rgb(230, 227, 248);
   transition: width 0.5s ease;
 }
-nav .nav-bar-lado_isquierdo ul > li a{
-  /* color: aliceblue; */
-  font-size: 17px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
+
 nav .nav-bar-lado_isquierdo ul > li:hover::after{
   width: 100%;
   transform: scaleX(1.1);
   transform: scale(1.1);
   text-shadow: 10px 2px 4px rgba(240, 141, 48, 0.836);
 }
+
+.drop-dow-menu2{
+  position: absolute;
+  background: #080911e5;
+  top: 105%;
+  padding: 10px 0 10px 0;
+  transition: display 1.5s ease;
+  border: 2px solid #040f69;
+  border-radius: 10px;
+  display: none;
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+.dropdown-item:hover{
+  background: #2e2e36e5;
+  transition: background 1s ease;
+  border: 1px solid #040f69;
+  border-radius: 10px;
+} 
 .nav-bar-enlaces{
   display:flex;
   flex-direction: row;
@@ -120,14 +132,29 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
   transform: scale(1.1); 
 }
 
-.nav-bar-enlaces .drop-dow-navbar{
+.drop-dow-navbar{
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  cursor: pointer;
+  transition: border-bottom 0.3s ease;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   background-color: #fff;
   border: 1px solid #9b92d1;
   border-radius: 5px;
 }
+
+.drop-dow-navbar a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #menu-sesion{
   height: 40px;
   width: 25px;

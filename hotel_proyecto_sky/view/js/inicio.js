@@ -3,7 +3,13 @@ let reservation = document.getElementsByClassName("reservar")[0];
 let puppet = false;
 let FechaInicio = null;
 let FechaFin = null;
+let desplegable_menu_secion = document.getElementById("menu-sesion");
 
+desplegable_menu_secion.addEventListener("click",(e)=>{
+    document.getElementById("drow-dow-main").style.display = "flex";
+    console.log("cancelado");
+    e.stopPropagation();
+});
 clic_date.addEventListener("click",()=>{
     if(puppet){
         console.log("desactivando");
