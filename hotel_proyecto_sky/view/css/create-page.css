@@ -1,0 +1,28 @@
+
+
+.imagen_dato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 2em;
+    /* background:linear-gradient(to top, #00086714 40%, #2b2a2a75 60%) */
+}
+.tamanio_ancho{
+    height: 100%;
+}
+.tamanio_completo{
+    height: 100%;
+    width: 100%;
+}
+
+.fondo_2_claro{
+    background: linear-gradient(to top, #051a7345 30%, #040a3b59 70%);
+}
+.flex{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}

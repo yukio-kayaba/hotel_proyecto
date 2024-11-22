@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 </head>
-<body>
+<body class="animacion_zoom fondo_imagen_principal fondo_principal1">
     <?php include("layouts/navbar.php"); ?>
     <?php include("layouts/aside.php"); ?>
     <?php include("layouts/titulo_principal.php"); ?>

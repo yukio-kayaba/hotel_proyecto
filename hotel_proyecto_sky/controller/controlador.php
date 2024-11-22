@@ -10,5 +10,9 @@
 		static function principal_css(){
 			require_once("./view/css/principal.css");
 		}
+		static function CrearCuenta(){
+			require_once("./view/crear_cuenta.php");
+		}
+		
 	}
 ?>
