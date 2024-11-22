@@ -99,13 +99,14 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
 
 .drop-dow-menu2{
   position: absolute;
+  height: 0;
   background: #080911e5;
   top: 105%;
   padding: 10px 0 10px 0;
-  transition: display 1.5s ease;
   border: 2px solid #040f69;
   border-radius: 10px;
   display: none;
+  transition: height 0.3s ease-out;
   /* justify-content: center;
   align-items: center;
   flex-direction: column; */

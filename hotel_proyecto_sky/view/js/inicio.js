@@ -4,23 +4,51 @@ let puppet = false;
 let FechaInicio = null;
 let FechaFin = null;
 let desplegable_menu_secion = document.getElementById("menu-sesion");
+const drop_dow_main = document.getElementById("drow-dow-main");
 
 desplegable_menu_secion.addEventListener("click",(e)=>{
-    document.getElementById("drow-dow-main").style.display = "flex";
-    console.log("cancelado");
     e.stopPropagation();
+    if(drop_dow_main.style.display === "none" || drop_dow_main.style.display === ""){
+        drop_dow_main.style.display = "flex";
+        setTimeout(()=>{
+            drop_dow_main.style.height = drop_dow_main.scrollHeight + "px";
+        },10);
+    }else {
+        drop_dow_main.style.height = 0;
+        setTimeout(()=>{
+            drop_dow_main.style.display = "none";
+        },300);
+    }
+    drop_dow_main.style.display = "flex";
+    console.log("cancelado");
 });
+
+document.addEventListener("click",(event)=>{
+    
+    if(!drop_dow_main.contains(event.target) && event.target !== desplegable_menu_secion ){
+        drop_dow_main.style.height = 0;
+        setTimeout(()=>{
+            drop_dow_main.style.display = "none";
+        },300);
+        // drop_dow_main.style.display = "none";
+    }
+});
+
 clic_date.addEventListener("click",()=>{
+    let objeto_aux = document.getElementsByClassName("ubication_date");
     if(puppet){
         console.log("desactivando");
         document.getElementsByClassName("ubication_date")[0].style.display = "none";
         document.getElementsByClassName("reservar_activate")[0].style.display = "none";
         puppet = false;
     }else{
-        console.log("activando");
-        document.getElementsByClassName("ubication_date")[0].style.display = "flex";
+        objeto_aux[0].style.display = "flex";
         puppet = true;
+        setTimeout(()=>{
+            objeto_aux[0].style.height = objeto_aux[0].scrollHeight+"px";
+        },20);
     }
+    // console.log("activando");
 });
 reservation.addEventListener("click",()=>{
     if(puppet){
