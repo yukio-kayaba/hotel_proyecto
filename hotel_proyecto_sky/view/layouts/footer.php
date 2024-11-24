@@ -50,11 +50,10 @@
             </div>
             
             <div class="footerColumn">
-                <h3>Kerzner</h3>
+                <h3>VILLA</h3>
                 <ul>
-                    <li><a>One&Only</a></li>
-                    <li><a>Rare Finds</a></li>
-                    <li><a>Siro</a></li>
+                
+                    <li><a>Hallazgos raros</a></li>
                     <li><a>Empleo</a></li>
                 </ul>
             </div>
@@ -74,7 +73,7 @@
             </div>
          <!-- REDES COPURIGHT -->
                 <div class="copyright">
-                    2024 © derechos reservados.
+                    2024 © derechos reservados a RZF.
                 </div>
         </div>
     </div>

@@ -21,7 +21,7 @@ nav{
 }
 
 .nav-colores{
-  background: linear-gradient(to right,  rgb(86 116 209 / 96%) 20% ,  rgb(30 23 115) 80% );
+  background: #001446;
   /* transition: background 0.7s ease; */
   color: (208,184,154,1) ;
 }
@@ -100,11 +100,11 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
 .drop-dow-menu2{
   position: absolute;
   height: 0;
-  background: #080911e5;
+  background: #00000098;
   top: 105%;
-  padding: 10px 0 10px 0;
-  border: 2px solid #040f69;
-  border-radius: 10px;
+  padding: 30px 15px 30px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
   display: none;
   transition: height 0.3s ease-out;
   /* justify-content: center;
@@ -114,8 +114,8 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
 .dropdown-item:hover{
   background: #2e2e36e5;
   transition: background 1s ease;
-  border: 1px solid #040f69;
-  border-radius: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
 } 
 .nav-bar-enlaces{
   display:flex;
@@ -144,8 +144,8 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  background-color: #fff;
-  border: 1px solid #9b92d1;
+  background-color: #00000000;
+  
   border-radius: 5px;
 }
 
@@ -184,7 +184,7 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
     bottom: 0px;
     height: 40px;
     position: fixed;
-    background: linear-gradient(to right,  rgba(140, 162, 233, 0.829) 40% ,  rgba(49, 17, 173, 0.664) 60% );
+    background: #001446;
     filter: blur(0.2px);
     font-family: fangsong;
     z-index: 1000;

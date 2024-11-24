@@ -39,8 +39,9 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .section .elemento_separado{
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0); 
     width: 65%;
     height: 70px;
     position: absolute;
@@ -54,15 +55,21 @@
 
 .section .elemento_separado .drop-activador{
     font-size: 17px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 32%;
-    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 450;
+    font-style: normal;
+    width: 25%;
+    color: #d0b89a;
     height: 100%;
-    display: grid;
-    border: 1.5px dotted #02119b;
-    border-radius: 10px;
+    display: grid; 
+    border-radius: 0px;
+    border: 2px solid #d0b89a;
+    
 }
+
 .section .elemento_separado .drop-activador .drop-dow{
+
+    background-color: #14101042;
     transition: all 0.5s ease;
     cursor: pointer;
     width: 100%;
@@ -70,14 +77,14 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 
 .section .elemento_separado .drop-dow:hover{
-    transform: scale(1.05);
-    color: #fff;
-    background: #080131b6;
+    transform: scale(1.01);
+    color: #000000;
+    background: #ffffff;
 }
 
 .drop-dow-menu1{

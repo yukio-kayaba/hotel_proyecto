@@ -1,5 +1,6 @@
 
 <section class="section parallax bg-image-1">
+
     <div class="titulo_principal">
         <img  src="<?php echo url;?>/view/images/hotel_loe.gif" alt="">
         <p> Bienvenido a  </p>
@@ -14,7 +15,10 @@
         </h2>
         <p>Su Comodidad al maximo</p>
     </div>
+
+
     <div class="elemento_separado">
+
         <div class="drop-activador">
             <div class="drop-dow">
                 <p>Iniciar Secion</p>
@@ -25,7 +29,9 @@
                 </p>
             </div>
         </div>
+
         <div class="drop-activador">
+            
             <div class="drop-dow reservar">
                 <p>Reservar</p>
             </div>
@@ -39,9 +45,11 @@
                 <button class="button is-link is-light">Selecionar Habitacion</button>
             </div>
         </div>
+
+
         <div class="drop-activador ">
             <div class="drop-dow ubication">
-                <p>Hubicacion</p>
+                <p>Ubicacion</p>
             </div>
             <div class="drop-dow-menu1 ubication_date" style="left:50%;">
                 <h2>Hubicacion de nuestro sitio</h2>
@@ -52,5 +60,8 @@
             </div>
         </div>
     </div>
+
+
+
 </section>
 
