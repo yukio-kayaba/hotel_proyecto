@@ -88,14 +88,16 @@
 }
 
 .drop-dow-menu1{
+    
     position: absolute;
+    
     bottom: 80px;
     background: #1e247775;
-    /* min-height: 20px; */
+     min-height: 20px; 
     padding: 10px 0 10px 0;
     border: 5px solid #02119b;
     border-radius: 10px;
-    display: none;
+   display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;

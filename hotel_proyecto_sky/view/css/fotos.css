@@ -1,0 +1,91 @@
+/* Estilos generales */
+.general_1 {
+  background-color: #fff; /* Fondo blanco */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  min-height: 60vh; /* Altura mínima igual al 60% de la ventana */
+  display: flex;
+  flex-direction: column; /* Usamos flexbox para centrar los elementos */
+  justify-content: center; /* Centra el carrusel horizontalmente */
+  align-items: center; /* Centra el carrusel verticalmente */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+/* Contenedor principal del carrusel */
+.container-carousel {
+  position: relative; /* Necesario para las posiciones absolutas internas */
+  width: 900px; /* Ancho fijo del carrusel */
+  height: 488px; /* Altura fija del carrusel */
+  background-color: #e0e0e0; /* Fondo gris claro */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66); /* Sombra elegante */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta cualquier contenido que desborde */
+}
+
+/* Contenedor de las imágenes */
+.carruseles {
+  display: flex; /* Coloca las imágenes en línea horizontal */
+  width: calc(100% * 6); /* Ancho total del carrusel basado en el número de imágenes */
+  height: 100%; /* Altura completa del carrusel */
+  transition: transform 0.5s ease-in-out; /* Animación suave al deslizar */
+}
+
+/* Cada sección individual (una por imagen) */
+.slider-section {
+  width: calc(100% / 6); /* Divide el carrusel en partes iguales según las imágenes */
+  height: 100%; /* Altura igual a la del contenedor principal */
+  overflow: hidden; /* Asegura que nada desborde */
+}
+
+/* Imágenes dentro del carrusel */
+.slider-section img {
+  width: 100%; /* Escala la imagen al ancho completo de su sección */
+  height: 100%; /* Escala la imagen a la altura completa de su sección */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Botones de navegación */
+.btn-left,
+.btn-right {
+  display: flex; /* Flexbox para centrar contenido (icono) */
+  position: absolute; /* Para colocarlos sobre el carrusel */
+  top: 50%; /* Centrado vertical */
+  font-size: 1.5rem; /* Tamaño del icono */
+  background-color: transparent; /* Fondo transparente */
+  border-radius: 50%; /* Forma circular */
+  padding: 5px; /* Espaciado interno */
+  font-weight: 600; /* Grosor del icono */
+  cursor: pointer; /* Cursor de mano para indicar interactividad */
+  color: #ffffff81; /* Color inicial del icono */
+  transform: translate(0, -50%); /* Asegura el centrado vertical */
+  transition: background-color 0.5s ease, color 0.5s ease; /* Animación suave en hover */
+  user-select: none; /* Evita la selección de texto o iconos */
+}
+
+/* Hover en los botones */
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #00246d75; /* Fondo azul traslúcido al pasar el mouse */
+  color: #fff; /* Color blanco para el icono */
+}
+
+/* Botón izquierdo */
+.btn-left {
+  left: 10px; /* Posición a la izquierda del carrusel */
+}
+
+/* Botón derecho */
+.btn-right {
+  right: 10px; /* Posición a la derecha del carrusel */
+}
+
+.subtitulo {
+  width: 800px; /* Ancho fijo */
+  margin: 0 auto 40px auto; /* Centra el subtítulo y añade un margen inferior */
+  text-align: center; /* Centra el texto dentro del subtítulo */
+  font-size: 36px; /* Tamaño de fuente del subtítulo */
+  font-weight: bold; /* Negrita */
+  color: #000000; /* Color del texto */
+  padding-bottom: 10px; /* Espaciado entre el texto y la línea decorativa */
+}

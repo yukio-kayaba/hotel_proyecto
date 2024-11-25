@@ -12,7 +12,7 @@
     </div>
     <div class="nav-bar-lado_isquierdo color_text_alicebu">
         <ul>
-            <li class="li-datos"><a href="" class="nav-bar-enlaces">
+            <li class="li-datos"><a href="#fotos_scroller" class="nav-bar-enlaces">
 
             <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/FFFFFF/apple-photos.png" alt="apple-photos"/>
                 <p class="color_text_alicebu">Fotos</p>
@@ -74,6 +74,7 @@
 
                     </span>
                 </div>
+                
                 <div class="drop-dow-menu2 " id="drow-dow-main">
                     <div class="dropdown-content">
                         <a href="#" class="dropdown-item"> Crear Cuenta </a>
