@@ -51,7 +51,7 @@
             <div class="drop-dow ubication">
                 <p>Ubicacion</p>
             </div>
-            <div class="drop-dow-menu1 ubication_date" style="left:50%;">
+            <div class="drop-dow-menu1 ubication_date" style="left:-50%;">
                 <h2>Hubicacion de nuestro sitio</h2>
                 <p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15575.496065256566!2d-69.2027392!3d-12.59055375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1732137340302!5m2!1ses-419!2spe" width="440" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -7,12 +7,12 @@
 </head>
     <body class="flex row  fondo_imagen_principal fondo_create_count  ">
         <section class="imagen_dato " style="width:100%">
-            <div class="">
-                <div>
+            <div class="imagen_logo_control">
+                <div style="width: 50%;">
                     <img src="<?php echo url; ?>/view/images/logovilla2.png" alt="">
                 </div>
                 <div>
-                    <p>Hotel Villa</p>
+                    <p class="burn">Hotel Villa</p>
                 </div>
             </div>
             <div class="formulario">
