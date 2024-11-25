@@ -24,7 +24,7 @@
             </a></li>
             <li class="li-datos">
                 <div class="drop-dow-navbar">
-                    <a href="#" class="">
+                    <a href="secion" class="">
                         <p class="color_text_alicebu">Iniciar Sesion</p>
                         
                         <div class="drop-dow-menu1" style="left: -2%;">
@@ -77,7 +77,7 @@
                 
                 <div class="drop-dow-menu2 " id="drow-dow-main">
                     <div class="dropdown-content">
-                        <a href="#" class="dropdown-item"> Crear Cuenta </a>
+                        <a href="CrearCuenta" class="dropdown-item"> Crear Cuenta </a>
                         <a href="#" class="dropdown-item"> Perfil </a>
                         <a href="#" class="dropdown-item"> Historial </a>
                         <hr class="dropdown-divider" />

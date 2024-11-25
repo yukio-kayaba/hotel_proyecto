@@ -13,6 +13,8 @@
 		static function CrearCuenta(){
 			require_once("./view/crear_cuenta.php");
 		}
-		
+		static function Secion(){
+			require_once("./view/iniciar_secion.php");
+		}
 	}
 ?>

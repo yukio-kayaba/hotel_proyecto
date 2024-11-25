@@ -39,6 +39,9 @@ body{
     background-image: url("../images/foto_hotel_cabania.jpg");
 }
 
+.fondo_iniciar_secion{
+    background-image: url("../images/3.jpg");
+}
 .section {
 
     display: flex;

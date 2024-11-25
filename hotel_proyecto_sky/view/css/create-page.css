@@ -7,6 +7,7 @@
     height: 100vh;
     color: white;
     font-size: 2em;
+    gap: 10px;
     /* background:linear-gradient(to top, #00086714 40%, #2b2a2a75 60%) */
 }
 .tamanio_ancho{
@@ -49,29 +50,87 @@
     flex-direction: column;
 }
 .imagen_logo_control{
-    width: 40%;
+    width: 550px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.imagen_logo_control div p{
+    font-size: 150px;
+    font-weight: bold;
+    text-shadow: 1px 0 1px #c5c5c58f;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.imagen_logo_control div p{
-    font-size: 70px;
-}
 .burn{
-    background-image: url("../images/goku_date.gif");
+    background-image: url("../images/shi_ka.webp");
     background-size: cover;
     background-position: center;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
 }
+.no_burn{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(208,184,154,1);
+}
+.imagen_logo_control .titulos_datos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.imagen_logo_control .imagen_datos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
    .formulario{
         width: 90%;
    }
    .imagen_dato{
     flex-direction: column;
+    justify-content: normal;
    }
+   .imagen_logo_control div p{
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 1px 0 1px #c5c5c58f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .imagen_logo_control{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .imagen_logo_control .imagen_datos{
+        filter: blur(0px);
+        width: auto;
+        height: auto;
+    }
+    .imagen_logo_control .titulos_datos{
+        flex-direction: row;
+        position: relative;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .imagen_datos img{
+        width: 40%;
+    }
 }
+

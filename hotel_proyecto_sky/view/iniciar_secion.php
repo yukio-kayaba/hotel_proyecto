@@ -1,24 +1,24 @@
 <?php
-    $titulo = "VILLA ||  Create Count";
+    $titulo = "VILLA || Iniciar Secion";
 ?>
 
 <?php include("layouts/head.php"); ?>
     <link rel="stylesheet" href="<?php echo url;?>/view/css/create-page.css">
 </head>
-    <body class="flex row  fondo_imagen_principal fondo_create_count  ">
+    <body class="flex row  fondo_imagen_principal fondo_iniciar_secion  ">
         <section class="imagen_dato " style="width:100%">
             <div class="imagen_logo_control">
                 <div class="imagen_datos" >
                     <img src="<?php echo url; ?>/view/images/logovilla2.png" alt="" >
                 </div>
                 <div class="titulos_datos">
-                    <p class="burn">HOTEL</p>
-                    <p class="burn">VILLA</p>
+                    <p class="no_burn">HOTEL</p>
+                    <p class="no_burn">VILLA</p>
                 </div>
             </div>
             <div class="formulario">
                 <div class="titulo_presentacion">
-                    <h2>Registro</h2>
+                    <h2>Iniciar Secion</h2>
                 </div>
                 <div class="field">
                     <label class="label1">Nombre</label>
@@ -53,15 +53,6 @@
                         </span>
                     </div>
                         <p class="help is-danger" hidden >This email is invalid</p>
-                    </div>
-
-                    <div class="field">
-                    <div class="control">
-                        <label class="checkbox">
-                        <input type="checkbox">
-                        acepta nuestro <a href="#"> terminos y condiciones</a>
-                        </label>
-                    </div>
                     </div>
                     <div class="field is-grouped">
                     <div class="control">
