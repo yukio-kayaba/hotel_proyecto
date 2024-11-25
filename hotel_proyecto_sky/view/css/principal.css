@@ -16,7 +16,7 @@ body{
 }
 
 .animacion_zoom{
-    animation: ZoomIn 10s infinite alternate;
+    animation: ZoomIn 15s infinite alternate;
 }
 .fondo_imagen_principal{
     background-size: cover;
@@ -25,7 +25,7 @@ body{
     background-repeat: no-repeat;
 }
 .fondo_principal1{
-    background-image: url("../images/fondo_principal.jpg");
+    background-image: url("../images/foto_delfin.jpg");
 }
 
 .fondo_imagen_principal2{
@@ -36,7 +36,7 @@ body{
     background-repeat: no-repeat;
 }
 .fondo_create_count{
-    background-image: url("../images/fondo_pantalla.jpg");
+    background-image: url("../images/foto_hotel_cabania.jpg");
 }
 
 .section {
@@ -67,13 +67,15 @@ body{
 }
 
 @keyframes ZoomIn{
-    0%{
-        /* transform: scale(1); */
-        background-size: 105%;
-    }
     100%{
         /* transform: scale(1.1); */
-        background-size: 110%;
+        background-image: url("../images/foto_hotel_cabania.jpg");
+    }
+}
+
+@keyframes ZoomIn2{
+    100%{
+        background-image: url("../images/foto_disenio.jpg");
     }
 }
 
@@ -81,5 +83,10 @@ body{
     .fondo_create_count{
         background-image: url("../images/fondo_movil.jpg");
     }
-
+    .fondo_principal1{
+        background-image: url("../images/fondo_movil.jpg");
+    }
+    .animacion_zoom{
+        animation: ZoomIn2 15s infinite alternate;
+    }
 }
