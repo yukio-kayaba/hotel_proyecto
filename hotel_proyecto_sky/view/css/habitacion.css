@@ -35,8 +35,11 @@ h1, h3, h4 {
 .posts {
     display: flex;
     flex-wrap: wrap;
-    gap: 150px;
-    justify-content: center ;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    /* gap: 150px; */
+    /* justify-content: center ; */
 }
 
 /* Cada habitación */
@@ -44,7 +47,7 @@ h1, h3, h4 {
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
-    width: 300px;
+    width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -134,5 +137,8 @@ h1, h3, h4 {
 
     .room {
         width: 90%;
+    }
+    .nav-isquierdo{
+        display: none;
     }
 }
