@@ -13,8 +13,15 @@
 		static function CrearCuenta(){
 			require_once("./view/crear_cuenta.php");
 		}
+		static function VerHabitaciones(){
+			require_once("./view/habitaciones.php");
+		}
 		static function Secion(){
 			require_once("./view/iniciar_secion.php");
 		}
+
+		
+		
+
 	}
 ?>

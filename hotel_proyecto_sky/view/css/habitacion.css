@@ -1,0 +1,138 @@
+
+h1, h3, h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Contenedor principal */
+.contenido_pagina {
+    display: flex; /* Usamos flexbox para crear una distribución en filas */
+    flex-direction: row; /* Organiza los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    padding-top: 60px;
+    margin: 0 auto;
+    gap: 10px; /* Espaciado entre columnas */
+}
+
+/* Columna derecha: habitaciones */
+.contenido_pagina .col.romms {
+    
+    flex: 3; /* La columna derecha ocupa más espacio */
+}
+
+/* Título de la sección */
+.habitacion_tipo h3 {
+    font-size: 1.5rem;
+    color:#000000;
+    border-bottom: 4px solid #000000;
+    background-color: transparent;
+    padding: 2px 20px 22px 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Contenedor de habitaciones */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center ;
+}
+
+/* Cada habitación */
+.room {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.room .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.room h4 {
+    font-size: 1.5rem;
+    color: #34495e;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.room .expansion {
+    padding: 10px;
+}
+
+.room .expansion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.room .expansion ul li {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 5px 0;
+    border-bottom: 1px solid #a9a7be;
+}
+
+.room .expansion ul li:last-child {
+    border-bottom: none;
+}
+
+/* Botón */
+.room .button {
+    display: block;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room .button:hover {
+    background-color: #051e2e;
+    color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .habitacion_tipo{
+
+        text-align: left;
+    }
+    .contenido_pagina h3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col.text {
+        max-width: 90%;
+        position: static; /* Se desactiva el sticky en pantallas pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        width: 90%;
+    }
+}
