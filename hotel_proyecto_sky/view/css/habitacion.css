@@ -9,9 +9,9 @@ h1, h3, h4 {
     display: flex; /* Usamos flexbox para crear una distribución en filas */
     flex-direction: row; /* Organiza los elementos horizontalmente */
     align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-    padding-top: 60px;
+    /* padding-top: 60px; */
     margin: 0 auto;
-    gap: 10px; /* Espaciado entre columnas */
+    /* gap: 10px; Espaciado entre columnas */
 }
 
 /* Columna derecha: habitaciones */

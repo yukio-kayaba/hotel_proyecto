@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/fotos.css">
     <script src="<?php echo url;?>/view/js/inicio.js" defer></script>
     <script src="<?php echo url;?>/view/js/script.js" defer></script>
-    
+    <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -33,3 +34,4 @@
 </body>
 
 <?php include("layouts/footer.php"); ?>
+</html>

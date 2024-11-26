@@ -26,13 +26,6 @@
                 <div class="drop-dow-navbar">
                     <a href="secion" class="">
                         <p class="color_text_alicebu">Iniciar Sesion</p>
-                        
-                        <div class="drop-dow-menu1" style="left: -2%;">
-                            <h2>Selecione una fecha </h2>
-                            <div class="row_update">
-                                
-                            </div>
-                        </div>
                     </a>
                     <span id="menu-sesion" class="icon is-small">
                     <svg 

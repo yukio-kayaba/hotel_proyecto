@@ -1,0 +1,8 @@
+.nav-isquierdo{
+    width: 100px;
+    background: aqua;
+    height: 100vh;
+    position: sticky;
+    top: 50px;
+    border-right: 2px inset #412c1b;
+}
