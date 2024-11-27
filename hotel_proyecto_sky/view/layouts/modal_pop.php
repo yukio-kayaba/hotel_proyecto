@@ -10,8 +10,8 @@
     </section>
     <footer class="modal-card-foot">
       <div class="buttons">
-        <button class="button is-success">Save changes</button>
-        <button class="button modal_btn_cancel">Cancel</button>
+        <button class="button is-success">Reservar</button>
+        <button class="button modal_btn_cancel">Cancelar</button>
       </div>
     </footer>
   </div>

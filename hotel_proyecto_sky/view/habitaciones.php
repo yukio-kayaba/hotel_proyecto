@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/nav-isquierdo.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
     
+    <script src="<?php echo url;?>/view/js/classes/class_habitaciones.js" defer></script>
+    <script src="<?php echo url;?>/view/js/habitaciones.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
-    <script src="<?php echo url;?>/view/js/habitaciones.js" defer></script>
-    <script src="<?php echo url;?>/view/js/classes/class_habitaciones.js" defer></script>
     
 </head>
 <body>
@@ -20,7 +20,7 @@
         <?php include("layouts/nav-bar-isq.php");?>
         <div class="col romms">
             <section class="habitacion_tipo">
-                <h3>Habitaciones</h3>
+                <h3>+ de 500 Habitaciones</h3>
                 <div class="posts">
                     <div class="room activador_pop" >
                         <div class="image">
@@ -31,11 +31,8 @@
                             <ul class="config">
                                 <li>hola1</li>
                                 <li>hola2</li>
-                                <!-- <li>hola4</li> -->
-                                <!-- <li>hola5</li> -->
                             </ul>
                         </div>
-                        <!-- <div class="button">View details</div> -->
                     </div>
                     <div class="room activador_pop">
                         <div class="image">

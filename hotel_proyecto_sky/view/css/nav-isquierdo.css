@@ -11,6 +11,7 @@
     flex-direction: column;
     padding: 10px 0 10px 0;
     transition: all 0.5s ease;
+    overflow: hidden;
 }
 .nav-isquierdo .isq_opciones_arriba{
     width: 100%;
@@ -22,13 +23,23 @@
     flex-wrap: nowrap;
 }
 
-.nav-isquierdo .isq_opciones_arriba div{
+.nav-isquierdo .isq_opciones_arriba .etiqueta_nav {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
+    height: 40px;
+    color: black;
+    transition: background-color 0.5s ease;
 }
+.nav-isquierdo .isq_opciones_arriba .etiqueta_nav:hover{
+    background-color: #113ca8;
+    transition: background-color 0.5s ease;
+    transform: scale(1.1);
+    color: #fff;
+}
+
 .nav_isq_abierto{
     width: 170px;
     /* transition: all 0.5s ease; */
