@@ -1,9 +1,9 @@
 .nav-isquierdo{
     width: 60px;
     background: #fff;
-    height: 97vh;
+    height: 90vh;
     position: sticky;
-    top: 50px;
+    top: 10vh;
     border-right: 5px solid rgb(20, 12, 0);
     display: flex;
     justify-content: space-between;
