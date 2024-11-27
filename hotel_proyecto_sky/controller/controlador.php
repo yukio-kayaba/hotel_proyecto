@@ -23,7 +23,9 @@
 		static function Fundadores(){
 			require_once("./view/fundadores.php");
 		}
-		
+		static function historial(){
+			require_once("./view/historial.php");
+		}
 		
 
 	}

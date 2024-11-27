@@ -16,6 +16,7 @@
 </head>
 <body>
     <?php include("layouts/navbar.php"); ?>
+    
     <div class="contenido_pagina">
         <?php include("layouts/nav-bar-isq.php");?>
         <div class="col romms">
