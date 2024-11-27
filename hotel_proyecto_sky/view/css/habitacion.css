@@ -130,7 +130,7 @@ h1, h3, h4 {
 }
 .recta_fundadores{
     width: 100%;
-    background: #121212;
+    background: #00053b;
     height: 120px;
     display: flex;
     flex-direction: row;
@@ -139,7 +139,7 @@ h1, h3, h4 {
 }
 .carta_datos{
     width: 95%;
-    height: 340px;
+    height: 440px;
     position: absolute;
     /* top: 150px;  */
     display: flex;
@@ -148,9 +148,72 @@ h1, h3, h4 {
     flex-wrap: nowrap;
 }
 
-.tam_30{
-    width: 30% !important;
+
+.completo_tam{
+    width: 100%;
+    height: 100%;
 }
+.card2{
+    position: relative;
+    width: 320px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.card2 img:first-child {
+    box-shadow: 0 60px 60px -60px rgba(0, 30,255,0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+.card2 img:last-child{
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(10%);
+    transition:  0.3s ease;
+    opacity: 0;
+}
+.card2:hover{
+    transform: 
+        perspective(320px)
+        rotateX(10deg)
+        translateY(-5%)
+        translateZ(0) 
+    ;
+}
+.card2::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent 10% , rgba(0,0,0,0.5) 50% , rgba(0,0,0) 95% );
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.card2:hover::before{
+    opacity: 1;
+}
+.card2:hover img:last-child{
+    opacity: 1;
+    transform: translateY(-10%);
+}
+
+.card_descripcion{
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     .habitacion_tipo{
@@ -178,5 +241,35 @@ h1, h3, h4 {
     }
     .nav-isquierdo{
         display: none;
+    }
+    .recta_fundadores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carta_datos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .card2{
+        height: auto;
+    }
+    .card_descripcion{
+        position: relative;
+        background-color: #000000;
+    }
+    .recta_fundadores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 0;
+    }
+    .cuadro_datos_fund{
+        justify-content: flex-start;
     }
 }

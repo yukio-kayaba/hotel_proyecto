@@ -21,30 +21,35 @@
             <h3>Fundadores</h3>
             <div class="recta_fundadores">
                 <div class="carta_datos">
-                    
-                    <div class="room tam_30" >
-                            <div class="image">
-                                <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                            </div>
-                            <div class="expansion">
-                                <h4>Madison Twin</h4>
-                                <ul class="config">
-                                    <li>hola1</li>
-                                    <li>hola2</li>
-                                </ul>
-                            </div>
+                    <div>
+                        <article class="card2" >
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/fondo_z2.png" />
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/z_foto.png" />
+                        </article>
+                        <div class="card_descripcion">
+                            <p>ZAIN VIAMONTE VILCA</p>
+                            <p>YUKIO KAYABA</p>
+                        </div>
                     </div>
-                    <div class="room tam_30" >
-                            <div class="image">
-                                <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                            </div>
-                            <h4>Madison Twin</h4>
-                            <div class="expansion">
-                                <ul class="config">
-                                    <li>hola1</li>
-                                    <li>hola2</li>
-                                </ul>
-                            </div>
+                    <div>
+                        <article class="card2" >
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/elonk_con_fondo.png" />
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/imagen_elonk_sinf_fondo.png" />
+                        </article>
+                        <div class="card_descripcion">
+                            <p>FREDY QUECAÑO MAMANI</p>
+                            <p>SAMURAI</p>
+                        </div>
+                    </div>
+                    <div>
+                        <article class="card2" >
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/elonk_con_fondo.png" />
+                            <img class="imagen_card completo_tam" src="<?php echo url;?>/view/images/imagen_elonk_sinf_fondo.png" />
+                        </article>
+                        <div class="card_descripcion">
+                            <p>ROY CCORIMANYA APAZA</p>
+                            <p>YOR</p>
+                        </div>
                     </div>
                 </div>
             </div>
