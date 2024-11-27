@@ -15,7 +15,7 @@
             <li class="li-datos"><a href="#fotos_scroller" class="nav-bar-enlaces">
 
             <img width="50" height="50" src="https://img.icons8.com/carbon-copy/100/FFFFFF/apple-photos.png" alt="apple-photos"/>
-                <p class="color_text_alicebu">Fotos</p>
+                <p class="color_text_alicebu">Historial</p>
             </a></li>
             <li class="li-datos"><a href="VerHabitaciones" class="nav-bar-enlaces">
             <img width="48" height="48" src="https://img.icons8.com/dotty/80/FFFFFF/room.png" alt="room"/>

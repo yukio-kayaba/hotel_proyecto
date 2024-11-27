@@ -19,7 +19,10 @@
 		static function Secion(){
 			require_once("./view/iniciar_secion.php");
 		}
-
+		
+		static function Fundadores(){
+			require_once("./view/fundadores.php");
+		}
 		
 		
 

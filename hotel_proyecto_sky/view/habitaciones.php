@@ -10,6 +10,8 @@
     
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
+    <script src="<?php echo url;?>/view/js/habitaciones.js" defer></script>
+    <script src="<?php echo url;?>/view/js/classes/class_habitaciones.js" defer></script>
     
 </head>
 <body>
@@ -20,40 +22,36 @@
             <section class="habitacion_tipo">
                 <h3>Habitaciones</h3>
                 <div class="posts">
-                    <a href=" ">
-                        <div class="room">
-                            <div class="image">
-                                <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-                            </div>
-                            <h4>Madison Twin</h4>
-                            <div class="expansion">
-                                <ul class="config">
-                                    <li>hola1</li>
-                                    <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
-                                </ul>
-                            </div>
-                            <div class="button">View details</div>
+                    <div class="room activador_pop" >
+                        <div class="image">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
                         </div>
-                    </a>
-                    <a href=" ">
-                        <div class="room">
-                            <div class="image">
-                            <img src="https://images.pexels.com/photos/1879061/pexels-photo-1879061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " />
-                            </div>
-                            <h4>Madison Twin</h4>
-                            <div class="expansion">
-                                <ul class="config">
-                                    <li>hola1</li>
-                                    <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
-                                </ul>
-                            </div>
-                            <div class="button">View details</div>
+                        <h4>Madison Twin</h4>
+                        <div class="expansion">
+                            <ul class="config">
+                                <li>hola1</li>
+                                <li>hola2</li>
+                                <!-- <li>hola4</li> -->
+                                <!-- <li>hola5</li> -->
+                            </ul>
                         </div>
-                    </a>
+                        <!-- <div class="button">View details</div> -->
+                    </div>
+                    <div class="room activador_pop">
+                        <div class="image">
+                        <img src="https://images.pexels.com/photos/1879061/pexels-photo-1879061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " />
+                        </div>
+                        <h4>Madison Twin</h4>
+                        <div class="expansion">
+                            <ul class="config">
+                                <li>hola1</li>
+                                <li>hola2</li>
+                                <!-- <li>hola4</li> -->
+                                <!-- <li>hola5</li> -->
+                            </ul>
+                        </div>
+                        <!-- <div class="button">View details</div> -->
+                    </div>
                     <a href=" ">
                         <div class="room">
                             <div class="image">
@@ -64,11 +62,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -81,11 +79,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -98,11 +96,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -115,11 +113,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -132,11 +130,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -149,11 +147,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                     <a href=" ">
@@ -166,11 +164,11 @@
                                 <ul class="config">
                                     <li>hola1</li>
                                     <li>hola2</li>
-                                    <li>hola4</li>
-                                    <li>hola5</li>
+                                    <!-- <li>hola4</li> -->
+                                    <!-- <li>hola5</li> -->
                                 </ul>
                             </div>
-                            <div class="button">View details</div>
+                            <!-- <div class="button">View details</div> -->
                         </div>
                     </a>
                 </div>
@@ -178,5 +176,6 @@
             <?php include("layouts/footer.php"); ?>
         </div>
     </div>
+    <?php include("layouts/modal_pop.php"); ?>
 </body>
 </html>

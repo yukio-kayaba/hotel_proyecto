@@ -30,14 +30,15 @@
     align-items: center;
 }
 .nav_isq_abierto{
-    width: 150px;
+    width: 170px;
     /* transition: all 0.5s ease; */
 }
 .nav_isq_abierto  p{
     display: block !important;
     transition: all 0.2s ease;
-    width: 70px;
+    width: 80px;
     overflow: hidden;
+    cursor: pointer;
 }
 .isq_opciones_abajo{
     width: 90%;
