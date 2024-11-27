@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
     
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
+    <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
     
 </head>
 <body>
