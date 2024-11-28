@@ -4,22 +4,22 @@
   </div>
 <div class="container-carousel">
         <div class="carruseles" id="slider">
-            <section class="slider-section">
-            <img  src="<?php echo url;?>/view/images/1.jpg" alt="">
+            <section class="slider-section ">
+              <img  src="<?php echo url;?>/view/images/1.jpg" alt="">
             </section>
-            <section class="slider-section">
+            <section class="slider-section ">
             <img  src="<?php echo url;?>/view/images/2.jpg" alt="">
             </section>
-            <section class="slider-section">
+            <section class="slider-section ">
             <img  src="<?php echo url;?>/view/images/3.jpg" alt="">
             </section>
-            <section class="slider-section">
+            <section class="slider-section ">
             <img  src="<?php echo url;?>/view/images/4.jpg" alt="">
             </section>
-            <section class="slider-section">
+            <section class="slider-section ">
             <img  src="<?php echo url;?>/view/images/5.jpg" alt="">
             </section>
-            <section class="slider-section">
+            <section class="slider-section ">
             <img  src="<?php echo url;?>/view/images/6.jpg" alt="">
             </section>
         </div>

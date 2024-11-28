@@ -51,6 +51,7 @@
   display: flex; /* Flexbox para centrar contenido (icono) */
   position: absolute; /* Para colocarlos sobre el carrusel */
   top: 50%; /* Centrado vertical */
+  z-index: 1;
   font-size: 1.5rem; /* Tamaño del icono */
   background-color: transparent; /* Fondo transparente */
   border-radius: 50%; /* Forma circular */

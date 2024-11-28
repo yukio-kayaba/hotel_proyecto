@@ -7,8 +7,8 @@ $(document).ready(function(){
         modal.addClass("is-active");
         console.log("ID del activador_pop:", idActivador);
         let id = idActivador.slice(11);
-        let aux_habitacion = datos_habitaciones[id]; 
-        $(".modal-card-title").html(aux_habitacion.set_nombre());
+        // let aux_habitacion = datos_habitaciones[id]; 
+        cargar_datos_modal(datos_habitaciones[id]);
     });
     $(document).on("click",".modal-background",(e)=>{
         e.stopPropagation();
@@ -18,9 +18,27 @@ $(document).ready(function(){
     $(document).on("click",".modal_btn_cancel",(e)=>{
         e.stopPropagation();
         $("#modal_pop_up").removeClass("is-active");
+        $("#slider").html("");
+        $("#slider").css("");
     });
 
-    
+    function cargar_datos_modal(habitacion){
+        $(".modal-card-title").html(habitacion.set_nombre());
+        let fotos = "";
+        let cantidad = 0;
+        habitacion.set_fotos().forEach(element => {
+            fotos += `
+            <section class="slider-section completo_wh">
+                <img  src="${element}" alt="">
+            </section>
+            `;
+            cantidad ++;
+        });
+        $(".imagenes_modal").css("width",`calc(100% * ${cantidad})`);
+        $(".imagenes_modal").html(fotos);
+        $(".descripcion_modal").html(habitacion.set_descripcion());
+        
+    }
 
     let habitacion1 = new habitaciones(1,"madison Twin","habitacion de la realeza",500,["https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]);
     let habitacion2 = new habitaciones(2, "Royal Suite", "Suite real en el Hotel Plaza",200, ["https://images.pexels.com/photos/194343/pexels-photo-194343.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
@@ -31,7 +49,7 @@ $(document).ready(function(){
     let habitacion7 = new habitaciones(7, "Poolside Suite", "Suite junto a la piscina",600, ["https://images.pexels.com/photos/1199630/pexels-photo-1199630.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
     let habitacion8 = new habitaciones(8, "Sky Lounge", "Lounge de lujo en el último piso",0, ["https://images.pexels.com/photos/587380/pexels-photo-587380.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
     let habitacion9 = new habitaciones(9, "Forest Cabin", "Cabaña de lujo en el bosque",300, ["https://images.pexels.com/photos/1157066/pexels-photo-1157066.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
-    let habitacion10 = new habitaciones(10, "Desert Oasis", "Oasis de lujo en el desierto",600, ["https://images.pexels.com/photos/3465875/pexels-photo-3465875.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
+    let habitacion10 = new habitaciones(10, "Desert Oasis", "Oasis de lujo en el desierto",600, ["https://images.pexels.com/photos/3465875/pexels-photo-3465875.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1","https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/194343/pexels-photo-194343.jpeg?auto=compress&cs=tinysrgb&w=1600&h=900&dpr=1"]);
 
     datos_habitaciones.push(habitacion1);
     datos_habitaciones.push(habitacion2);

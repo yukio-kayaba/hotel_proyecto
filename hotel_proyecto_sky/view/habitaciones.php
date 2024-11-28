@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/navbar_estyle.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/nav-isquierdo.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
-    
+    <link rel="stylesheet" href="<?php echo url;?>/view/css/modal.css">
+    <link rel="stylesheet" href="<?php echo url;?>/view/css/fotos.css">
+
     <script src="<?php echo url;?>/view/js/classes/class_habitaciones.js" defer></script>
     <script src="<?php echo url;?>/view/js/habitaciones.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
+    <script src="<?php echo url;?>/view/js/script.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
     
 </head>

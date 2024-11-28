@@ -1,23 +1,27 @@
 const btnLeft = document.querySelector(".btn-left"),
       btnRight = document.querySelector(".btn-right"),
-      slider = document.querySelector("#slider"),
-      sliderSection = document.querySelectorAll(".slider-section");
+      slider = document.querySelector("#slider");
 
 
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
 
 setInterval(() => {
-    moveToRight()
+    // console.log("datos");
+    if(slider.childElementCount > 1){
+        moveToRight()
+    }
 }, 3000);
 
 
 let operacion = 0,
-    counter = 0,
-    widthImg = 100 / sliderSection.length;
+    counter = 0;
 
 function moveToRight() {
-    if (counter >= sliderSection.length-1) {
+    let sliderSection1 = document.querySelectorAll(".slider-section");
+    widthImg = 100 / sliderSection1.length;
+
+    if (counter >= sliderSection1.length-1) {
         counter = 0;
         operacion = 0;
         slider.style.transform = `translate(-${operacion}%)`;
@@ -32,10 +36,12 @@ function moveToRight() {
 }  
 
 function moveToLeft() {
+    let sliderSection1 = document.querySelectorAll(".slider-section");
+    widthImg = 100 / sliderSection1.length;
     counter--;
     if (counter < 0 ) {
-        counter = sliderSection.length-1;
-        operacion = widthImg * (sliderSection.length-1)
+        counter = sliderSection1.length-1;
+        operacion = widthImg * (sliderSection1.length-1)
         slider.style.transform = `translate(-${operacion}%)`;
         slider.style.transition = "none";
         return;
