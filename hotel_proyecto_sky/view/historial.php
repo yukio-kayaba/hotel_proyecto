@@ -5,7 +5,7 @@
 <?php include("layouts/head.php"); ?>
     <link rel="stylesheet" href="<?php echo url; ?>/view/css/historial.css">
     <link rel="stylesheet" href="<?php echo url; ?>/view/css/navbar_estyle.css">
-    <link rel="stylesheet" href="<?php echo url; ?>/view/css/nav-isquierdo.css">
+   
     <link rel="stylesheet" href="<?php echo url; ?>/view/css/footer.css">
 
     <script src="<?php echo url; ?>/view/js/nav-bar.js" defer></script>
@@ -18,7 +18,7 @@
     <main class="contenido_pagina">
         <!-- Barra de navegación lateral -->
         <aside class="nav_lateral">
-            <?php include("layouts/nav-bar-isq.php"); ?>
+            
         </aside>
 
         <!-- Contenido principal -->
@@ -38,15 +38,53 @@
                         <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
                     </div>
                 </article>
-
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card_icon"><i class="fas fa-history"></i></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Registro #1</h2>
+                        <p class="card_date"><strong>Fecha:</strong> 2024-11-27</p>
+                        <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
+                    </div>
+                </article>
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card_icon"><i class="fas fa-history"></i></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Registro #1</h2>
+                        <p class="card_date"><strong>Fecha:</strong> 2024-11-27</p>
+                        <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
+                    </div>
+                </article>
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card_icon"><i class="fas fa-history"></i></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Registro #1</h2>
+                        <p class="card_date"><strong>Fecha:</strong> 2024-11-27</p>
+                        <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
+                    </div>
+                </article>
+                  <!-- Tarjeta 1 -->
+                  <article class="card">
+                    <div class="card_icon"><i class="fas fa-history"></i></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Registro #1</h2>
+                        <p class="card_date"><strong>Fecha:</strong> 2024-11-27</p>
+                        <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
+                    </div>
+                </article>
+                  <!-- Tarjeta 1 -->
+                  <article class="card">
+                    <div class="card_icon"><i class="fas fa-history"></i></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Registro #1</h2>
+                        <p class="card_date"><strong>Fecha:</strong> 2024-11-27</p>
+                        <p class="card_description">Ejemplo de un registro en el historial con detalles relevantes.</p>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
-
-    <!-- Pie de página -->
-    <?php include("layouts/footer.php"); ?>
-
-    <!-- Modales -->
-    <?php include("layouts/modal_pop.php"); ?>
 </body>
 </html>
