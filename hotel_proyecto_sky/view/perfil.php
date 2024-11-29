@@ -1,6 +1,9 @@
 
    <?php $titulo = "VILLA || perfil"; ?>
    <?php include("layouts/head.php"); ?>
+   <link rel="stylesheet" href="<?php echo url;?>/view/css/navbar_estyle.css">
+
+   <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
 
 <link rel="stylesheet" href="<?php echo url;?>/view/css/perfil.css">
 </head>
@@ -8,6 +11,7 @@
 
 <body>
     <div class="elite-profile">
+    <?php include("layouts/navbar.php"); ?>
         <div class="profile-container">
             <!-- Columna Izquierda -->
             <div class="profile-sidebar">
