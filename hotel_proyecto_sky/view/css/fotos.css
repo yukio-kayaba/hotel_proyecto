@@ -87,6 +87,6 @@
   text-align: center; /* Centra el texto dentro del subtítulo */
   font-size: 36px; /* Tamaño de fuente del subtítulo */
   font-weight: bold; /* Negrita */
-  color: #ffffff; /* Color del texto */
+  color: #000000; /* Color del texto */
   padding-bottom: 10px; /* Espaciado entre el texto y la línea decorativa */
-}
+} 

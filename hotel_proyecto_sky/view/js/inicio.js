@@ -1,92 +1,105 @@
 let clic_date = document.getElementsByClassName("ubication")[0];
 let reservation = document.getElementsByClassName("reservar")[0];
+let ubicationMenu = document.getElementsByClassName("ubication_date")[0];
+let reservationMenu = document.getElementsByClassName("reservar_activate")[0];
 let puppet = false;
 let FechaInicio = null;
 let FechaFin = null;
 
-clic_date.addEventListener("click",()=>{
-    let objeto_aux = document.getElementsByClassName("ubication_date");
-    if(puppet){
-        console.log("desactivando");
-        document.getElementsByClassName("ubication_date")[0].style.display = "none";
-        document.getElementsByClassName("reservar_activate")[0].style.display = "none";
+// Función para cerrar menús
+function cerrarMenus() {
+    if(puppet) {
+        ubicationMenu.style.display = "none";
+        reservationMenu.style.display = "none";
         puppet = false;
-    }else{
-        objeto_aux[0].style.display = "flex";
-        puppet = true;
-        setTimeout(()=>{
-            objeto_aux[0].style.height = objeto_aux[0].scrollHeight+"px";
-        },20);
     }
-    // console.log("activando");
+}
+
+// Event listener para ubicación
+clic_date.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if(puppet && ubicationMenu.style.display === "flex") {
+        cerrarMenus();
+    } else {
+        cerrarMenus(); // Cierra cualquier otro menú abierto
+        ubicationMenu.style.display = "flex";
+        puppet = true;
+        setTimeout(() => {
+            ubicationMenu.style.height = ubicationMenu.scrollHeight + "px";
+        }, 20);
+    }
 });
-reservation.addEventListener("click",()=>{
-    if(puppet){
-        console.log("desactivando");
-        document.getElementsByClassName("reservar_activate")[0].style.display = "none";
-        document.getElementsByClassName("ubication_date")[0].style.display = "none";
-        puppet = false;
-    }else{
-        console.log("activando");
-        document.getElementsByClassName("reservar_activate")[0].style.display = "flex";
+
+// Event listener para reserva
+reservation.addEventListener("click", (e) => {
+    e.stopPropagation();
+    if(puppet && reservationMenu.style.display === "flex") {
+        cerrarMenus();
+    } else {
+        cerrarMenus(); // Cierra cualquier otro menú abierto
+        reservationMenu.style.display = "flex";
         puppet = true;
     }
 });
 
-const fecha_date = (fecha)=>{
+// Click fuera de los menús
+document.addEventListener("click", (event) => {
+    const isClickInsideUbication = ubicationMenu.contains(event.target) || 
+                                  clic_date.contains(event.target);
+    const isClickInsideReservation = reservationMenu.contains(event.target) || 
+                                    reservation.contains(event.target) ||
+                                    event.target.closest('.flatpickr-calendar');
+    
+    if (!isClickInsideUbication && !isClickInsideReservation && puppet) {
+        cerrarMenus();
+    }
+});
+
+// Funciones auxiliares
+const fecha_date = (fecha) => {
     let fecha_date = new Date(fecha);
     fecha_date.setMonth(fecha_date.getMonth() + 1);
     return fecha_date;
 }
 
-const pintar_rango = ()=>{
-    if(FechaInicio && FechaFin){
-        let iniciar = new Date(Math.min(FechaInicio,FechaFin));
+const pintar_rango = () => {
+    if(FechaInicio && FechaFin) {
+        let iniciar = new Date(Math.min(FechaInicio, FechaFin));
         let final = new Date(Math.max(FechaInicio, FechaFin));
         let DiasSelect = document.querySelectorAll('.flatpickr-day');
-        DiasSelect.forEach(function(dias){
+        DiasSelect.forEach(function(dias) {
             let dia = dias.dateObj;
-            if(dia >= iniciar && dia <= final){
+            if(dia >= iniciar && dia <= final) {
                 dias.classList.add('in-range');
-            }else{
+            } else {
                 dias.classList.remove('in-range');
             }
         });
     }
 }
 
-flatpickr("#fecha_inicio",{
-    inline:true,
-    dateFromat:"Y-m-d",
-    defaultDate:"today",
-    minDate:"today",
-    locale:"es",
-    onChange:function(SelectedDate,dateStr,instance){
+// Configuración de calendarios
+flatpickr("#fecha_inicio", {
+    inline: true,
+    dateFromat: "Y-m-d",
+    defaultDate: "today",
+    minDate: "today",
+    locale: "es",
+    onChange: function(SelectedDate, dateStr, instance) {
         FechaInicio = SelectedDate[0];
-        // if(fechaInicio){
-        //     fechafin.setMonth(fechaInicio.getMonth()+1);
-        // }
         document.getElementById("fecha_fin")._flatpickr.config.minDate = FechaInicio;
         pintar_rango();
-        // document.getElementById("fecha_fin")._flatpickr.setDate(fechafin);
     }
 });
-flatpickr("#fecha_fin",{
-    inline:true,
-    dateFromat:"Y-m-d",
-    defaultDate:fecha_date(new Date()),
-    minDate:"today",
-    locale:"es",
-    onChange:function(SelectedDate,dateStr,instance){
+
+flatpickr("#fecha_fin", {
+    inline: true,
+    dateFromat: "Y-m-d",
+    defaultDate: fecha_date(new Date()),
+    minDate: "today",
+    locale: "es",
+    onChange: function(SelectedDate, dateStr, instance) {
         FechaFin = SelectedDate[0];
         pintar_rango();
-        // let fechafin = SelectedDate[0];
-        // let fechainicio = new Date(fechafin);
-        // if(fechafin){
-        //     fechainicio.setMonth(fechafin.getMonth()+1);
-        // }
-        // document.getElementById("fecha_inicio")._flatpickr.setDate(fechainicio);
     }
 });
-
-

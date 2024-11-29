@@ -96,19 +96,33 @@ nav .nav-bar-lado_isquierdo ul > li:hover::after{
   text-shadow: 10px 2px 4px rgba(240, 141, 48, 0.836);
 }
 
-.drop-dow-menu2{
+.drop-dow-menu2 {
   position: absolute;
   height: 0;
   background: #00000098;
   top: 105%;
-  padding: 30px 15px 30px 15px;
+  padding: 0; /* Cambiado: inicialmente sin padding */
   border: 2px solid #ffffff;
   border-radius: 0px;
   display: none;
-  transition: height 0.3s ease-out;
-  /* justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  overflow: hidden; /* Añadido: oculta el contenido cuando height es 0 */
+  max-height: 300px; /* Altura máxima cuando está abierto */
+    overflow-y: auto; 
+  transition: height 0.3s ease-out, padding 0.3s ease-out; /* Añadido: transición para padding */
+}
+/* Añadida nueva clase para cuando el menú está activo */
+.drop-dow-menu2.active {
+  padding: 30px 15px;
+  display: flex;
+}
+
+.dropdown-content {
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s ease-out;
+}
+
+.dropdown-content.visible {
+  opacity: 1;
 }
 .dropdown-item:hover{
   background: #2e2e36e5;

@@ -39,6 +39,7 @@
                     <a href="VerHabitaciones">
                     <button class="action-button primary-button">Reservar habitacion</button>
                     </a>
+                    
                     <a href="editar">
                     <button class="action-button secondary-button"> Editar perfil</button>
                     </a>
