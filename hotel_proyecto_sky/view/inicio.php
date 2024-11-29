@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo url;?>/view/css/servcios.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/footer.css">
     <link rel="stylesheet" href="<?php echo url;?>/view/css/fotos.css">
+   
     <script src="<?php echo url;?>/view/js/inicio.js" defer></script>
     <script src="<?php echo url;?>/view/js/script.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>

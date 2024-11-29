@@ -11,6 +11,8 @@
     <script src="<?php echo url; ?>/view/js/nav-bar.js" defer></script>
     <script src="<?php echo url; ?>/view/js/nav_isquierdo.js" defer></script>
 </head>
+
+
 <body>
     <!-- Barra de navegación superior -->
     <?php include("layouts/navbar.php"); ?>

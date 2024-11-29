@@ -71,7 +71,7 @@
                 <div class="drop-dow-menu2 " id="drow-dow-main">
                     <div class="dropdown-content">
                         <a href="CrearCuenta" class="dropdown-item"> Crear Cuenta </a>
-                        <a href="#" class="dropdown-item"> Perfil </a>
+                        <a href="perfil" class="dropdown-item"> Perfil </a>
                         <a href="#" class="dropdown-item"> Historial </a>
                         <hr class="dropdown-divider" />
                         <a href="#" class="dropdown-item"> Cerrar Secion </a>

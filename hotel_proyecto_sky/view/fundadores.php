@@ -13,6 +13,7 @@
     <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
     
 </head>
+
 <body>
     <?php include("layouts/navbar.php"); ?>
     <div class="contenido_pagina">

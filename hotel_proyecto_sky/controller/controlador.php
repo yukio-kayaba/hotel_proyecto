@@ -26,6 +26,15 @@
 		static function historial(){
 			require_once("./view/historial.php");
 		}
+		static function perfil(){
+			require_once("./view/perfil.php");
+		}
+		static function editar(){
+			require_once("./view/editar.php");
+		}
+		
+		
+		
 		
 
 	}
