@@ -111,8 +111,9 @@
                                 <span class="stay-date">Octubre 2023</span>
                                 <span class="stay-status">Completada</span>
                             </div>
-                        </div>
-                        <div class="stay-item">
+                        
+                            </div>
+                            <div class="stay-item">
                             <div class="stay-info">
                                 <span class="stay-location">Grand Hotel Madrid</span>
                                 <span class="stay-details">Suite Ejecutiva | 5 noches</span>
@@ -121,8 +122,9 @@
                                 <span class="stay-date">Octubre 2023</span>
                                 <span class="stay-status">Completada</span>
                             </div>
-                        </div>
-                        <div class="stay-item">
+                        
+                            </div>
+                            <div class="stay-item">
                             <div class="stay-info">
                                 <span class="stay-location">Grand Hotel Madrid</span>
                                 <span class="stay-details">Suite Ejecutiva | 5 noches</span>
@@ -131,8 +133,9 @@
                                 <span class="stay-date">Octubre 2023</span>
                                 <span class="stay-status">Completada</span>
                             </div>
-                        </div>
-                        <div class="stay-item">
+                        
+                            </div>
+                            <div class="stay-item">
                             <div class="stay-info">
                                 <span class="stay-location">Grand Hotel Madrid</span>
                                 <span class="stay-details">Suite Ejecutiva | 5 noches</span>
@@ -141,8 +144,9 @@
                                 <span class="stay-date">Octubre 2023</span>
                                 <span class="stay-status">Completada</span>
                             </div>
-                        </div>
-                        <div class="stay-item">
+                        
+                            </div>
+                            <div class="stay-item">
                             <div class="stay-info">
                                 <span class="stay-location">Grand Hotel Madrid</span>
                                 <span class="stay-details">Suite Ejecutiva | 5 noches</span>
@@ -151,27 +155,8 @@
                                 <span class="stay-date">Octubre 2023</span>
                                 <span class="stay-status">Completada</span>
                             </div>
-                        </div>
-                        <div class="stay-item">
-                            <div class="stay-info">
-                                <span class="stay-location">Grand Hotel Madrid</span>
-                                <span class="stay-details">Suite Ejecutiva | 5 noches</span>
+                        
                             </div>
-                            <div class="stay-meta">
-                                <span class="stay-date">Octubre 2023</span>
-                                <span class="stay-status">Completada</span>
-                            </div>
-                        </div>
-                        <div class="stay-item">
-                            <div class="stay-info">
-                                <span class="stay-location">Grand Hotel Madrid</span>
-                                <span class="stay-details">Suite Ejecutiva | 5 noches</span>
-                            </div>
-                            <div class="stay-meta">
-                                <span class="stay-date">Octubre 2023</span>
-                                <span class="stay-status">Completada</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
