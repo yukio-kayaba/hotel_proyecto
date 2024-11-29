@@ -39,11 +39,7 @@
                     </div>
                 </div>
 
-                <div class="profile-actions">
-                    <a href="VerHabitaciones">
-                    <button class="action-button primary-button">Reservar habitacion</button>
-                    </a>
-                    
+                <div class="profile-actions"> 
                     <a href="editar">
                     <button class="action-button secondary-button"> Editar perfil</button>
                     </a>

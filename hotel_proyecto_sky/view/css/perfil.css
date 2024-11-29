@@ -258,12 +258,6 @@ background: linear-gradient(to top, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Fir
     font-size: 1rem;
 }
 
-.primary-button {
-    background: var(--primary);   
-    color: var(--light);
-    border: 2px solid var(--light);
-}
-
 .secondary-button {
     background: transparent;
     color: var(--light);
