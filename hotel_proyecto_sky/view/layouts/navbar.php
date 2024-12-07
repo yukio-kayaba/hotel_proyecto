@@ -5,9 +5,15 @@
             <span></span>
             <span></span>
         </div>
+
         <p class="nav-bar-enlaces">
+        
+        <a href="inicio">
         <img width="40" height="40" src="https://img.icons8.com/glyph-neue/64/FFFFFF/5-star-hotel.png" alt="5-star-hotel"/>
+        </a>
             Hotel Villa
+            
+           
         </p>
     </div>
     <div class="nav-bar-lado_isquierdo color_text_alicebu">

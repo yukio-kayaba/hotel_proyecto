@@ -18,7 +18,7 @@
           <div class="opciones_user" >
               <div class="descripcion_modal">
 
-              </div>
+              </div
           </div>
       </div>
     </section>
