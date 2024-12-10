@@ -13,7 +13,6 @@
     <script src="<?php echo url;?>/view/js/classes/class_habitaciones.js" defer></script>
     <script src="<?php echo url;?>/view/js/habitaciones.js" defer></script>
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
-    g
     <script src="<?php echo url;?>/view/js/nav_isquierdo.js" defer></script>
     
 </head>

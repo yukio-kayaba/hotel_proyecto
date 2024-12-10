@@ -32,6 +32,9 @@
 		static function editar(){
 			require_once("./view/editar.php");
 		}
+		static function reserva(){
+			require_once("./view/reserva.php");
+		}
 		
 		
 		

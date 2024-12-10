@@ -1,0 +1,263 @@
+/* Variables y configuración base */
+:root {
+    --color-gold: #D0B89A;
+    --color-blue: #001446;
+    --color-white: #FFFFFF;
+    --color-error: #DC3545;
+    --shadow-main: 0 4px 20px rgba(0,0,0,0.08);
+    --transition: all 0.3s ease;
+}
+
+/* Contenedor principal */
+.booking-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 10vh);
+    padding: 40px 20px;
+    margin-top: 10vh;
+    background: #f5f5f5;
+}
+
+.booking-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--color-white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-main);
+    padding: 40px;
+}
+
+/* Indicador de progreso */
+.booking-progress ol {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px;
+    position: relative;
+}
+
+.booking-progress ol::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: var(--color-gold);
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.progress-step {
+    position: relative;
+    z-index: 2;
+    background: var(--color-white);
+    padding: 0 15px;
+    text-align: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-white);
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+    transition: var(--transition);
+}
+
+.progress-step.active .step-number {
+    background: var(--color-gold);
+    color: var(--color-white);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(208,184,154,0.4);
+}
+
+.step-label {
+    font-size: 0.9rem;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Formulario principal */
+.booking-form {
+    padding: 20px 0;
+}
+
+.form-step {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.form-step.active {
+    display: block;
+}
+
+/* Tipografía */
+h2 {
+    color: var(--color-blue);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+legend {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-gold);
+}
+
+/* Campos del formulario */
+label {
+    display: block;
+    margin-bottom: 25px;
+}
+
+input, 
+select {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid rgba(208,184,154,0.3);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(208,184,154,0.2);
+}
+
+/* Resumen */
+.booking-summary {
+    background: rgba(0,20,70,0.02);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--color-gold);
+}
+
+.booking-summary p {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(208,184,154,0.2);
+}
+
+.booking-summary p:last-child {
+    border: none;
+    font-weight: bold;
+    color: var(--color-gold);
+}
+
+/* Botones */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(208,184,154,0.2);
+}
+
+button {
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#prevBtn {
+    background: transparent;
+    color: var(--color-blue);
+    border: 1px solid var(--color-gold);
+}
+
+#nextBtn {
+    background: var(--color-blue);
+    color: var(--color-gold);
+    border: none;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-main);
+}
+
+/* Estado de error */
+.error {
+    border-color: var(--color-error);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .booking-wrapper {
+        padding: 20px 10px;
+        margin-bottom: 40px;
+    }
+    
+    .booking-container {
+        padding: 20px;
+    }
+    
+    .progress-step {
+        padding: 0 10px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-progress ol::before {
+        display: none;
+    }
+    
+    .progress-step {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
