@@ -9,6 +9,7 @@
     
     <script src="<?php echo url;?>/view/js/nav-bar.js" defer></script>
     <script src="<?php echo url;?>/view/js/reserva.js" defer></script>
+    
 </head>
 
 <body>
@@ -28,10 +29,6 @@
                     </li>
                     <li class="progress-step" data-step="3">
                         <span class="step-number">3</span>
-                        <span class="step-label">Datos</span>
-                    </li>
-                    <li class="progress-step" data-step="4">
-                        <span class="step-number">4</span>
                         <span class="step-label">Pago</span>
                     </li>
                 </ol>
@@ -78,22 +75,6 @@
                 </section>
 
                 <section class="form-step" data-step="3">
-                    <h2>Información personal</h2>
-                    <fieldset>
-                        <legend>Datos de contacto</legend>
-                        <label>Nombre completo
-                            <input type="text" name="name" required>
-                        </label>
-                        <label>Email
-                            <input type="email" name="email" required>
-                        </label>
-                        <label>Teléfono
-                            <input type="tel" name="phone" required>
-                        </label>
-                    </fieldset>
-                </section>
-
-                <section class="form-step" data-step="4">
                     <h2>Información de pago</h2>
                     <fieldset>
                         <legend>Datos de tarjeta</legend>
