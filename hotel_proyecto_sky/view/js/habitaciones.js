@@ -75,25 +75,6 @@ $(document).ready(function(){
     // datos_habitaciones.push(habitacion14);   
     // datos_habitaciones.push(habitacion15);   
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
     function cargar_habitaciones(inf_habitaciones){
         let texto = "";
         for (let i = 0; i < inf_habitaciones.length; i++) {

@@ -16,7 +16,13 @@ class habitaciones{
         return this.descripcion;
     }
     set_fotos(){
-        return this.fotos;
+        let url;
+        if(Array.isArray(this.fotos) && this.fotos.length != 0){
+            url = this.fotos;
+        }else{
+            url = ["https://images.pexels.com/photos/12296667/pexels-photo-12296667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"];
+        }
+        return url;
     }
     set_foto_principal(){
         let url = '';
