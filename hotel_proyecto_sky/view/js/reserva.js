@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Estado inicial
     const state = {
         currentStep: 1,
-        totalSteps: 4,
+        totalSteps: 3, // Changed from 4 to 3
         prices: {
             standard: 200,
             deluxe: 350,
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
     // Elementos DOM principales
     const form = document.getElementById('bookingForm');
-    const prevBtn = document.getElementById('prevBtn'); 
+    const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     
     // Controladores principales
@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
  
                 // Validaciones específicas
                 const validators = {
-                    email: value => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
                     card: value => /^\d{16}$/.test(value),
                     cvv: value => /^\d{3}$/.test(value)
                 };
@@ -175,4 +174,4 @@ document.addEventListener('DOMContentLoaded', () => {
  
     // Inicialización
     formController.updateButtons();
- });
+});

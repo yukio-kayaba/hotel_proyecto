@@ -24,7 +24,9 @@
     </section>
     <footer class="modal-card-foot">
       <div class="buttons">
+        <a href="reserva">
         <button class="button is-success ">Reservar</button>
+        </a>
         <button class="button modal_btn_cancel ">Cancelar</button>
       </div>
     </footer>
